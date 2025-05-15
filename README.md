@@ -1,6 +1,6 @@
-# Mini Libreria per Soluzione di Sistemi Lineari
 
-## 📚 Progetto MCS 2024-2025 – Metodi del Calcolo Scientifico
+
+# 📚 Progetto metodi del calcolo scientifico
 
 Questo progetto consiste nello sviluppo di una **mini libreria per la risoluzione di sistemi lineari** con **matrici simmetriche e definite positive**, utilizzando **metodi iterativi** implementati da zero.
 
@@ -16,7 +16,7 @@ Implementare i seguenti **solutori iterativi**:
 
 ---
 
-## Requisiti del Progetto
+## Requisiti del progetto
 
 La libreria deve:
 - Usare una struttura modulare (classi, interfacce... niente funzioni isolate).
@@ -35,7 +35,7 @@ La libreria deve:
 
 ---
 
-## Metodo di Test
+## Metodo di test
 
 Tutti i metodi devono essere testati sulle seguenti matrici sparse:
 
