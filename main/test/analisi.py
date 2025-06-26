@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def analizza_e_grafica(results):
+def dati(results):
     df = pd.DataFrame(results)
 
     # Crea cartella se non esiste
