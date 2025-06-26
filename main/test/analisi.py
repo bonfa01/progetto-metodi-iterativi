@@ -32,7 +32,6 @@ def dati(results):
         plt.ylabel("Numero di Iterazioni")
         plt.grid(True)
         plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, f"{nome_base}_iterazioni.png"))
         plt.close()
 
         # Tempo vs Tolleranza
@@ -44,7 +43,6 @@ def dati(results):
         plt.ylabel("Tempo [s]")
         plt.grid(True)
         plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, f"{nome_base}_tempo.png"))
         plt.close()
 
     # Statistiche complessive
