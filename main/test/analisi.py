@@ -3,8 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def dati(results):
+def analizza_e_grafica(results):
     df = pd.DataFrame(results)
+
+    # Crea cartella se non esiste
+    output_dir = "grafici"
+    os.makedirs(output_dir, exist_ok=True)
 
     # Tabella iterazioni medie
     print("\n--- Tabella Iterazioni medie per matrice e metodo ---")
@@ -32,6 +36,7 @@ def dati(results):
         plt.ylabel("Numero di Iterazioni")
         plt.grid(True)
         plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, f"{nome_base}_iterazioni.png"))
         plt.close()
 
         # Tempo vs Tolleranza
@@ -43,6 +48,7 @@ def dati(results):
         plt.ylabel("Tempo [s]")
         plt.grid(True)
         plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, f"{nome_base}_tempo.png"))
         plt.close()
 
     # Statistiche complessive
